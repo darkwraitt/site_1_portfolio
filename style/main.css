@@ -1,0 +1,111 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 15.625rem;
+}
+
+.story__title {
+  color: #48555b;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.125rem;
+  letter-spacing: 0.13rem;
+  padding: 3.125rem 0;
+}
+
+.story__title::after {
+  content: "";
+  width: 3.125rem;
+  height: 0.125rem;
+  background-color: #00a4e5;
+  display: block;
+  margin: 0.625rem auto 0;
+}
+
+.story__inner {
+  display: flex;
+  justify-content: center;
+}
+.story__inner .story__left {
+  max-width: 25em;
+  margin-right: 4.75em;
+}
+.story__inner .story__left-title {
+  color: #48555b;
+  font-weight: bold;
+  font-size: 1.25em;
+  letter-spacing: 0.01em;
+  margin-bottom: 1.875em;
+}
+.story__inner .story__left-title .accent-color {
+  color: #00a4e5;
+}
+.story__inner .story__left .basic-text {
+  font-weight: normal;
+  font-size: 0.813em;
+  line-height: 1.438em;
+  letter-spacing: 0.01em;
+}
+.story__inner .story__right {
+  display: flex;
+  align-items: flex-end;
+}
+.story__inner .story__right .story__item {
+  font-weight: 800;
+  font-size: 1.5em;
+  color: #fff;
+  text-transform: uppercase;
+  width: 5.834em;
+  height: 9.334em;
+  padding: 0.625em;
+  margin-right: 0.834em;
+}
+.story__inner .story__right .story__item:nth-child(1) {
+  background-image: url(/img/we_plan.png);
+}
+.story__inner .story__right .story__item:nth-child(2) {
+  background-image: url(/img/we_manage.png);
+}
+.story__inner .story__right .story__item:nth-child(3) {
+  background-image: url(/img/we_build.png);
+  margin-right: 0;
+}
+
+@media screen and (max-width: 90rem) {
+  .container {
+    padding: 0 3.125rem;
+  }
+}
+@media screen and (max-width: 64rem) {
+  .container {
+    padding: 0 0.938rem;
+  }
+  .story__inner {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 31.25rem) {
+  .story__right {
+    flex-wrap: wrap;
+  }
+  .story__right .story__item {
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */
