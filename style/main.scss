@@ -13,13 +13,78 @@ body {
 }
 .container {
   width: 100%;
-  max-width: 90rem;
+  max-width: 58.813rem;
   margin: 0 auto;
-  padding: 0 15.625rem;
+  // padding: 0 15.625rem;
 }
+// header
+.header__top {
+  background-image: url(../img/bgheader.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 48rem;
+  .logo {
+    display: block;
+    margin: 0 auto;
+    padding: 2.563em;
+  }
+  .header__title {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: normal;
+    font-size: 3.75rem;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
+    margin-top: 16.8rem;
+  }
+  .header__text {
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+  }
+  .scroll-down {
+    font-size: 0.688rem;
+    letter-spacing: 0.34em;
+    display: block;
+    margin: 13.813rem auto 4.438rem;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.header__navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 0.5rem;
+  .logo-black {
+    display: block;
+    width: 4.972rem;
+    height: 1.125rem;
+  }
+  .header__menu {
+    display: flex;
+    list-style-type: none;
+    .header__menu-item {
+      font-weight: 700;
+      font-size: 12px;
+      letter-spacing: 0.09em;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #48555b;
+      padding-left: 2.44rem;
+    }
+    .header__menu-item:hover {
+      color: #00a4e5;
+    }
+  }
+}
+
 // story
-.story {
-}
 .story__title {
   color: #48555b;
   text-transform: uppercase;
@@ -74,36 +139,15 @@ body {
       margin-right: 0.834em;
     }
     .story__item:nth-child(1) {
-      background-image: url(/img/we_plan.png);
+      background-image: url(../img/we_plan.png);
     }
     .story__item:nth-child(2) {
-      background-image: url(/img/we_manage.png);
+      background-image: url(../img/we_manage.png);
     }
     .story__item:nth-child(3) {
-      background-image: url(/img/we_build.png);
+      background-image: url(../img/we_build.png);
       margin-right: 0;
     }
   }
 }
-// @media
-@media screen and (max-width: 90rem) {
-  .container {
-    padding: 0 3.125rem;
-  }
-}
-@media screen and (max-width: 64rem) {
-  .container {
-    padding: 0 0.938rem;
-  }
-  .story__inner {
-    flex-wrap: wrap;
-  }
-}
-@media screen and (max-width: 31.25rem) {
-  .story__right {
-    flex-wrap: wrap;
-    .story__item {
-      margin-bottom: 20px;
-    }
-  }
-}
+

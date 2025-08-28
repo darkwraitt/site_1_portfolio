@@ -1,0 +1,46 @@
+@media screen and (max-width: 64rem) {
+  .container {
+    padding: 0 0.938rem;
+  }
+  .story__inner {
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 50rem) {
+  .header__top {
+    height: 30rem;
+    padding: 0 1rem;
+    .header__title {
+      font-size: 2.5rem;
+      margin-top: 5.8rem;
+    }
+    .header__text {
+      font-weight: 500;
+    }
+    .scroll-down {
+      display: none;
+    }
+  }
+  .header__navbar {
+    flex-direction: column;
+    padding-top: 2rem;
+    .header__menu {
+      flex-direction: column;
+      padding-left: 0;
+      .header__menu-item {
+        padding-left: 0;
+      }
+    }
+  }
+}
+@media screen and (max-width: 31.25rem) {
+  .story__title {
+    padding: 1.563rem 0;
+  }
+  .story__right {
+    flex-wrap: wrap;
+    .story__item {
+      margin-bottom: 20px;
+    }
+  }
+}
