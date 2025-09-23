@@ -15,51 +15,66 @@ body {
   width: 100%;
   max-width: 58.813rem;
   margin: 0 auto;
-  // padding: 0 15.625rem;
+}
+.btn {
+  white-space: nowrap;
+  text-transform: uppercase;
+  border: none;
+  background: #00a4e5;
+  padding: 0.688rem 1.813rem;
+  font-weight: 700;
+  font-size: 0.813rem;
+  letter-spacing: 0.04rem;
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
 }
 // header
-.header__top {
-  background-image: url(../img/bgheader.png);
-  background-position: center;
-  background-size: cover;
-  width: 100%;
-  height: 48rem;
-  .logo {
-    display: block;
-    margin: 0 auto;
-    padding: 2.563em;
-  }
-  .header__title {
-    font-family: "Bebas Neue", sans-serif;
-    font-weight: normal;
-    font-size: 3.75rem;
-    letter-spacing: 0.06em;
-    text-align: center;
-    color: #fff;
-    margin-top: 16.8rem;
-  }
-  .header__text {
-    font-weight: 600;
-    text-align: center;
-    color: #fff;
-  }
-  .scroll-down {
-    font-size: 0.688rem;
-    letter-spacing: 0.34em;
-    display: block;
-    margin: 13.813rem auto 4.438rem;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: #fff;
+.header {
+  border-bottom: 1px solid #e6e6e6;
+  &__top {
+    background-image: url(../img/bgheader.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 48rem;
+    .logo {
+      display: block;
+      margin: 0 auto;
+      padding: 2.48rem;
+    }
+    .header__title {
+      font-family: "Bebas Neue", sans-serif;
+      font-weight: normal;
+      font-size: 3.75rem;
+      letter-spacing: 0.243rem;
+      text-align: center;
+      color: #fff;
+      margin-top: 16.8rem;
+    }
+    .header__text {
+      font-weight: 600;
+      text-align: center;
+      color: #fff;
+    }
+    .scroll-down {
+      font-size: 0.688rem;
+      letter-spacing: 0.34em;
+      display: block;
+      margin: 13.813rem auto 4.438rem;
+      text-align: center;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #fff;
+    }
   }
 }
-
 .header__navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding-top: 0.5rem;
+  padding-bottom: 0.375rem;
   .logo-black {
     display: block;
     width: 4.972rem;
@@ -83,7 +98,6 @@ body {
     }
   }
 }
-
 // story
 .story__title {
   color: #48555b;
@@ -92,7 +106,7 @@ body {
   font-weight: bold;
   font-size: 1.125rem;
   letter-spacing: 0.13rem;
-  padding: 3.125rem 0;
+  padding: 3.688rem 0 4.1rem;
 }
 .story__title::after {
   content: "";
@@ -120,9 +134,9 @@ body {
     }
     .basic-text {
       font-weight: normal;
-      font-size: 0.813em;
-      line-height: 1.438em;
-      letter-spacing: 0.01em;
+      font-size: 0.813rem;
+      line-height: 1.438rem;
+      letter-spacing: 0.01rem;
     }
   }
   .story__right {
@@ -150,4 +164,184 @@ body {
     }
   }
 }
-
+// services
+.services {
+  margin-top: 7.5rem;
+  &__head {
+    display: flex;
+    &-title {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 1.125rem;
+      letter-spacing: 0.13rem;
+      color: #48555b;
+      min-width: 12.438rem;
+    }
+    &-title::after {
+      content: "";
+      width: 3.125rem;
+      height: 0.125rem;
+      background-color: #00a4e5;
+      display: block;
+      margin-top: 0.625rem;
+    }
+    &-text {
+      font-weight: 400;
+      font-size: 0.688rem;
+      line-height: 1.188rem;
+      letter-spacing: 0.02rem;
+      margin-left: 9.625rem;
+      max-width: 25.313rem;
+      margin-right: 2.1rem;
+    }
+  }
+  .services__bottom {
+    display: flex;
+    gap: 1.688rem;
+    margin-top: 4.875rem;
+    .services__item {
+      border: 1px solid #e6e6e6;
+      padding: 2.375rem 1.438rem;
+      .services__bottom-title {
+        margin-top: 1.563rem;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.03rem;
+        color: #48555b;
+        text-transform: uppercase;
+      }
+      .services__bottom-text {
+        margin-top: 0.813rem;
+        font-weight: 400;
+        font-size: 0.813rem;
+        line-height: 1.438rem;
+        letter-spacing: 0.01rem;
+        color: #48555b;
+      }
+    }
+  }
+}
+// build
+.build {
+  height: 31.188rem;
+  background-image: url(/img/bg_get-in-touch.png);
+  background-size: cover;
+  margin-top: 7.188rem;
+  text-align: center;
+  padding-top: 7.2rem;
+  &__title {
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    letter-spacing: 0.01rem;
+    color: #48555b;
+    margin-bottom: 2.188rem;
+  }
+}
+// footer
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.375rem;
+  padding: 1.5rem 0 1.875rem;
+  background-color: #171819;
+  &__title {
+    font-weight: 700;
+    font-size: 1.375rem;
+    letter-spacing: 0.04rem;
+    text-align: center;
+    color: #fff;
+  }
+  &__signup {
+    display: flex;
+    .newsletter__input {
+      border: 1px solid #979797;
+      width: 15.625rem;
+      height: 2.5rem;
+    }
+    .newsletter__btn {
+      max-width: 150px;
+      max-height: 40px;
+    }
+  }
+}
+.info {
+  background-color: #141a20;
+  .info__wrapper {
+    display: flex;
+    padding: 2.625rem 0 3.125rem;
+    justify-content: space-between;
+    .company {
+      max-width: 15.625rem;
+      .company__text {
+        font-weight: 400;
+        font-size: 0.688rem;
+        line-height: 1.188rem;
+        letter-spacing: 0.08rem;
+        color: #fff;
+        margin-top: 0.938rem;
+      }
+    }
+  }
+}
+.info__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.688rem;
+  letter-spacing: 0.08rem;
+  color: #fff;
+  margin-bottom: 1.188rem;
+}
+  .links__inner {
+    display: flex;
+    gap: 2rem;
+    .links__item {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+.link {
+  font-weight: 600;
+  font-size: 0.688rem;
+  line-height: 1.563rem;
+  letter-spacing: 0.08rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.938rem;
+  .direction {
+    font-weight: 400;
+    font-size: 0.688rem;
+    line-height: 1rem;
+    letter-spacing: 0.08rem;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+.contact .info__title {
+  margin-bottom: 0;
+}
+.icon {
+  margin-top: 1.8rem;
+  margin-right: 1.2rem;
+}
+.icon:last-child {
+  margin-right: 0;
+}
+.copyright {
+  background-color: #171819;
+  padding: 1.375rem 0;
+  .copyright__text {
+    font-weight: 400;
+    font-size: 0.688rem;
+    letter-spacing: 0.08em;
+    color: #fff;
+    text-align: center;
+  }
+}
