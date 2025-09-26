@@ -225,7 +225,7 @@ body {
 // build
 .build {
   height: 31.188rem;
-  background-image: url(/img/bg_get-in-touch.png);
+  background-image: url(img/bg_get-in-touch.png);
   background-size: cover;
   margin-top: 7.188rem;
   text-align: center;
@@ -256,14 +256,15 @@ body {
   }
   &__signup {
     display: flex;
+    width: auto;
     .newsletter__input {
       border: 1px solid #979797;
       width: 15.625rem;
       height: 2.5rem;
     }
     .newsletter__btn {
-      max-width: 150px;
-      max-height: 40px;
+      width: 150px;
+      height: 40px;
     }
   }
 }
@@ -275,7 +276,7 @@ body {
     justify-content: space-between;
     .company {
       max-width: 15.625rem;
-      .company__text {
+      &__text {
         font-weight: 400;
         font-size: 0.688rem;
         line-height: 1.188rem;
@@ -337,7 +338,7 @@ body {
 .copyright {
   background-color: #171819;
   padding: 1.375rem 0;
-  .copyright__text {
+  &__text {
     font-weight: 400;
     font-size: 0.688rem;
     letter-spacing: 0.08em;
